@@ -3,11 +3,11 @@ const CitaCaja = ({ cita }) => {
 
     return (
         <div className="cita">
-            <p>Mascota: {mascota}</p>
-            <p>Dueño: {dueno}</p>
-            <p>Fecha: {fecha}</p>
-            <p>Hora: {hora}</p>
-            <p>Síntomas: {sintomas}</p>
+            <p>Mascota: <span>{mascota}</span></p>
+            <p>Dueño: <span>{dueno}</span></p>
+            <p>Fecha: <span>{fecha}</span></p>
+            <p>Hora: <span>{hora}</span></p>
+            <p>Síntomas: <span>{sintomas}</span></p>
             <button
                 className="button elimnar u-full-width"
             >
