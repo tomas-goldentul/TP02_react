@@ -12,7 +12,7 @@ const campos = [
 
 function Formulario() {
   return (
-    <div className="formulario">
+    <div class="formulario">
       <form>
         <TituloFormulario />
         

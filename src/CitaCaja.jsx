@@ -1,3 +1,4 @@
+import './CitaCaja.css'
 const CitaCaja = ({ cita }) => {
     const { mascota, dueno, fecha, hora, sintomas } = cita
 
@@ -8,11 +9,7 @@ const CitaCaja = ({ cita }) => {
             <p>Fecha: <span>{fecha}</span></p>
             <p>Hora: <span>{hora}</span></p>
             <p>Síntomas: <span>{sintomas}</span></p>
-            <button
-                className="button elimnar u-full-width"
-            >
-                Eliminar ×
-            </button>
+            <button className="eliminar">Eliminar ×</button>
         </div>
     );
 };
