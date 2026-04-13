@@ -7,7 +7,7 @@ import Formulario from './Formulario.jsx'
 import Cita from './Cita.jsx'
 
 function App() {
-  const [citas] = useState([
+  const [citas, setCitas] = useState([
     {
       mascota: "Nina",
       dueno: "Martin",
@@ -30,6 +30,10 @@ function App() {
       sintomas: "No está comiendo"
     }
   ]);
+
+ 
+
+
   return (
     <>
       <h1>Administrador de pacientes</h1>
@@ -37,7 +41,7 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="one-half column">
-            <Formulario setCitas={setCitas}></Formulario>
+            <Formulario setCitas={setCitas} />
           </div>
           <div className="one-half column">
             <Cita citas={citas} />
