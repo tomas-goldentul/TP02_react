@@ -37,7 +37,7 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="one-half column">
-            <Formulario />
+            <Formulario setCitas={setCitas}></Formulario>
           </div>
           <div className="one-half column">
             <Cita citas={citas} />
