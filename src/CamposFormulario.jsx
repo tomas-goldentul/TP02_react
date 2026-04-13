@@ -1,4 +1,4 @@
-const CamposFormulario = ({ label, name, type, placeholder }) => {
+const CamposFormulario = ({ label, name, type, placeholder, value, onChange }) => {
   return (
     <div className="campo">
       <label>{label}</label>
@@ -6,7 +6,9 @@ const CamposFormulario = ({ label, name, type, placeholder }) => {
       {name === "sintomas" && (
         <textarea 
           name={name} 
-          className="u-full-width" 
+          className="u-full-width"
+          value={value}
+          onChange={onChange}
         />
       )}
 
@@ -16,6 +18,8 @@ const CamposFormulario = ({ label, name, type, placeholder }) => {
           name={name}
           placeholder={placeholder}
           className="u-full-width"
+          value={value}
+          onChange={onChange}
         />
       )}
     </div>
